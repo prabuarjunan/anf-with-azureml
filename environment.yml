@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/environment.schema.json
 name: python-base-nfs
 build:
-  local_path: environment/
+  path: environment/
 description: Environment with NFS drivers and a few Python libraries.
