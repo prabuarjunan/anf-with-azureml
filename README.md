@@ -48,7 +48,7 @@ Create a new Azure Machine Learning Workspace, VNET and Azure NetApp Files.
 First, create resource group and set defaults:
 
 ```console
-az group create -n $rg
+az group create -n $rg --location $location
 az configure --defaults group=$rg workspace=$workspace_name location=$location
 ```
 
