@@ -81,6 +81,18 @@ az netappfiles pool create --account-name $anf_name --name $pool_name --size 4 -
 az netappfiles volume create --account-name $anf_name --pool-name $pool_name --name vol1 --service-level premium --usage-threshold 4096 --file-path "vol1" --vnet $vnet_name --subnet anf --protocol-types NFSv3 --allowed-clients $vnet_aml_subnet --rule-index 1 --unix-read-write true
 ```
 
+## Preparing repository
+
+Downloading Code and unzipping it:
+
+```console
+wget https://github.com/prabuarjunan/anf-with-azureml/archive/refs/heads/main.zip
+unzip main.zip && rm main.zip 
+cd anf-with-azureml-main 
+```
+
+
+
 ## Resource creation in Azure Machine Learning
 
 Create a new Azure Machine Learning Environment with NFS drivers installed:
