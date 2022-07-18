@@ -8,6 +8,13 @@ The code created below creates around $40/day of Azure expenses, so please use i
 
 Run the following instructions on Linux/macOS using the Azure CLI.
 
+In case you are not yet logged in into your instance/shell:
+
+```console
+az login
+```
+
+
 ## Install extensions
 
 First, install the CLI extensions and make sure we can provision Azure NetApp Files:
