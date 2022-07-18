@@ -118,8 +118,10 @@ az ml job create -f train.yml --web
 ```
 
 In case you receive the following error:
+
 Failed to connect to MSI. Please make sure MSI is configured correctly.
 Get Token request returned: <Response [400]>
+
 One possible reason for the error might be a problem with authentication. Try: az login and then start the job again
 
 
