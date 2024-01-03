@@ -1,8 +1,12 @@
-FROM mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04
+FROM mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu22.04
 
 USER root:root
 
+# Download new package version list
+RUN apt-get update
+
 # Install NFS stack
+
 RUN apt-get install -y nfs-common fio
 
 # Install Python dependencies
